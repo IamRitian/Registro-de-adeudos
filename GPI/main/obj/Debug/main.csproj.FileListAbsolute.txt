@@ -1,0 +1,10 @@
+c:\users\darkness\documents\visual studio 2015\Projects\main\main\bin\Debug\main.exe.config
+c:\users\darkness\documents\visual studio 2015\Projects\main\main\bin\Debug\main.exe
+c:\users\darkness\documents\visual studio 2015\Projects\main\main\bin\Debug\main.pdb
+c:\users\darkness\documents\visual studio 2015\Projects\main\main\obj\Debug\main.csprojResolveAssemblyReference.cache
+c:\users\darkness\documents\visual studio 2015\Projects\main\main\obj\Debug\main.Form1.resources
+c:\users\darkness\documents\visual studio 2015\Projects\main\main\obj\Debug\main.Properties.Resources.resources
+c:\users\darkness\documents\visual studio 2015\Projects\main\main\obj\Debug\main.csproj.GenerateResource.Cache
+c:\users\darkness\documents\visual studio 2015\Projects\main\main\obj\Debug\main.exe
+c:\users\darkness\documents\visual studio 2015\Projects\main\main\obj\Debug\main.pdb
+c:\users\darkness\documents\visual studio 2015\Projects\main\main\obj\Debug\main.Pantallas.Registro_de_adeudos.resources

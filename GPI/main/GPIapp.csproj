@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F258D88-BC4C-43B1-8ABF-6C75E04E131F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>main</RootNamespace>
+    <AssemblyName>main</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasedeDatos.cs" />
+    <Compile Include="DataSetTabla.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetTabla.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Listas\Lista de Nomina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listas\Lista de Nomina.Designer.cs">
+      <DependentUpon>Lista de Nomina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listas\lista usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listas\lista usuario.Designer.cs">
+      <DependentUpon>lista usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listas\lista articulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listas\lista articulos.Designer.cs">
+      <DependentUpon>lista articulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listas\lista departamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listas\lista departamentos.Designer.cs">
+      <DependentUpon>lista departamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listas\lista empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listas\lista empleado.Designer.cs">
+      <DependentUpon>lista empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="metodos.cs" />
+    <Compile Include="PantallasExtra\listaAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallasExtra\listaAC.Designer.cs">
+      <DependentUpon>listaAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallasExtra\listaAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallasExtra\listaAD.Designer.cs">
+      <DependentUpon>listaAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallasExtra\listaCU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallasExtra\listaCU.Designer.cs">
+      <DependentUpon>listaCU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallasExtra\listaED.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallasExtra\listaED.Designer.cs">
+      <DependentUpon>listaED.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallasExtra\listaEC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallasExtra\listaEC.Designer.cs">
+      <DependentUpon>listaEC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallasExtra\listaEE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallasExtra\listaEE.Designer.cs">
+      <DependentUpon>listaEE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Adeudo pendiente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Adeudo pendiente.Designer.cs">
+      <DependentUpon>Adeudo pendiente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Adeudo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Adeudo.Designer.cs">
+      <DependentUpon>Adeudo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\AgregarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\AgregarUsuario.Designer.cs">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\cambio codigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\cambio codigo.Designer.cs">
+      <DependentUpon>cambio codigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cambios articulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cambios articulo.Designer.cs">
+      <DependentUpon>Cambios articulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Cambios empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Cambios empleado.Designer.cs">
+      <DependentUpon>Cambios empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\CambiosUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\CambiosUsuario.Designer.cs">
+      <DependentUpon>CambiosUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Eliminar articulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Eliminar articulo.Designer.cs">
+      <DependentUpon>Eliminar articulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Eliminar Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Eliminar Empleado.Designer.cs">
+      <DependentUpon>Eliminar Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Registrar articulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Registrar articulo.Designer.cs">
+      <DependentUpon>Registrar articulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Registrar empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Registrar empleado.Designer.cs">
+      <DependentUpon>Registrar empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Registro de adeudos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Registro de adeudos.Designer.cs">
+      <DependentUpon>Registro de adeudos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\RegistroAdeudo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\RegistroAdeudo.Designer.cs">
+      <DependentUpon>RegistroAdeudo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Listas\Lista de Nomina.resx">
+      <DependentUpon>Lista de Nomina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listas\lista usuario.resx">
+      <DependentUpon>lista usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listas\lista articulos.resx">
+      <DependentUpon>lista articulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listas\lista departamentos.resx">
+      <DependentUpon>lista departamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listas\lista empleado.resx">
+      <DependentUpon>lista empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallasExtra\listaAC.resx">
+      <DependentUpon>listaAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallasExtra\listaAD.resx">
+      <DependentUpon>listaAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallasExtra\listaCU.resx">
+      <DependentUpon>listaCU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallasExtra\listaED.resx">
+      <DependentUpon>listaED.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallasExtra\listaEC.resx">
+      <DependentUpon>listaEC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallasExtra\listaEE.resx">
+      <DependentUpon>listaEE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Adeudo pendiente.resx">
+      <DependentUpon>Adeudo pendiente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Adeudo.resx">
+      <DependentUpon>Adeudo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\AgregarUsuario.resx">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\cambio codigo.resx">
+      <DependentUpon>cambio codigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cambios articulo.resx">
+      <DependentUpon>Cambios articulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Cambios empleado.resx">
+      <DependentUpon>Cambios empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\CambiosUsuario.resx">
+      <DependentUpon>CambiosUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Eliminar articulo.resx">
+      <DependentUpon>Eliminar articulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Eliminar Empleado.resx">
+      <DependentUpon>Eliminar Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\EliminarUsuario.resx">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Registrar articulo.resx">
+      <DependentUpon>Registrar articulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Registrar empleado.resx">
+      <DependentUpon>Registrar empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Registro de adeudos.resx">
+      <DependentUpon>Registro de adeudos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\RegistroAdeudo.resx">
+      <DependentUpon>RegistroAdeudo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report_ListaNomina.rdlc" />
+    <None Include="DataSetTabla.xsc">
+      <DependentUpon>DataSetTabla.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTabla.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetTabla.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetTabla.xss">
+      <DependentUpon>DataSetTabla.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
